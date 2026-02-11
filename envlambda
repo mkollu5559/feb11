@@ -1,0 +1,22 @@
+environment {
+  variables = merge(
+    {
+      SFTPhost            = var.SFTPhost
+      SFTPport            = var.SFTPport
+      SFTPkeyBucket       = var.SFTPbucketkey
+      SFTPprivateKey      = var.SFTPprivateKey
+      SFTPuser            = var.SFTPuser
+      SFTPchangeDirectory = var.SFTPchangeDirectory
+      S3ArchiveBucket     = var.S3ArchiveBucket
+      S3ArchivePrefix     = var.S3ArchivePrefix
+      AppS3ArchiveBucket  = var.AppS3ArchiveBucket
+      AppS3ArchivePrefix  = var.AppS3ArchivePrefix
+      DeleteAfterPickup   = var.DeleteAfterPickup
+      efa_snsARN          = local.ob_efa_snsARN
+      cust_snsARN         = local.ob_cust_snsARN
+    },
+    var.test != null && trim(var.test) != "" ? {
+      test = var.test
+    } : {}
+  )
+}
