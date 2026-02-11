@@ -20,3 +20,10 @@ environment {
     } : {}
   )
 }
+
+
+variable "test" {
+  description = "Optional test variable for lambda"
+  type        = string
+  default     = null
+}
