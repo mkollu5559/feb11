@@ -1,0 +1,12 @@
+Subject: MFT Start/Stop Migration to CFS2 – QA Testing Window
+
+Hi Team,
+
+As you know, CFS1 GitLab will be retired in June 2026. We are planning to migrate the MFT start/stop process from CFS1 to CFS2 cloud.
+
+We would like to begin QA testing sometime after 2/25. Please let us know if you foresee any issues, dependencies, or conflicts that could impact testing or the migration.
+
+Also, if there is a preferred QA testing window after 2/25, please share your availability so we can coordinate accordingly.
+
+Thank you,
+Maneesha
